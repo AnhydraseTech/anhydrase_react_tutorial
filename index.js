@@ -14,3 +14,40 @@
  // Enter this:npx create-react-app my-app cd my-app npm start
  // i.e create-react-app (name of your app)  cd (your app) npm start
 
+//Notes on Types of Components
+ const Students = <h1> Name of students </h1>;
+// ReactDOM.render({Students}, document.getElementById('root'));
+
+// Functional (or Stateless) Component
+// const Sample =() =>{
+//   return (
+//     <h3> Something Random! </h3>
+//   )
+
+  
+// }
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(  
+//     <Sample />
+// )
+
+
+// Class Component
+import{ Component } from 'react';
+
+class Name extends Component {
+  render() {
+    return (
+      <div>
+        <h1> My name is Tochukwu </h1>
+      </div>
+    );
+  }
+}
+
+export default Name;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(  
+  <Name />
+)
